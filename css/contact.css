@@ -1,0 +1,111 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 1;
+}
+
+header h1 {
+  font-size: 24px;
+}
+
+header ul {
+  list-style: none;
+  display: flex;
+}
+
+header li {
+  margin-left: 20px;
+}
+
+header a {
+  color: black;
+  text-decoration: none;
+  line-height: 25px;
+  font-weight: bold;
+}
+
+header a:hover {
+  opacity: 0.7;
+  transition: 00.3s;
+}
+
+.main-title {
+  width: 100%;
+  height: 245px;
+  background-image: url(../img/mv.png);
+  background-size: cover;
+  background-position: center;
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  line-height: 245px;
+}
+
+.main-inner {
+  padding: 80px 0;
+  width: 75%;
+  margin: 0 auto;
+}
+
+label {
+  font-weight: bold;
+  line-height: 30px;
+}
+
+label span {
+  color: red;
+}
+
+input {
+  width: 100%;
+  height: 30px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+}
+
+textarea {
+  width: 100%;
+  border: 1px solid #ccc;
+}
+
+form div:last-child input {
+  display: block;
+  background-color: black;
+  color: white;
+  width: 300px;
+  cursor: pointer;
+  margin: 20px auto 0;
+  height: 44px;
+  font-weight: bold;
+}
+
+footer {
+  padding: 20px 70px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #222;
+  color: white;
+  font-size: 12px;
+}
+
+footer ul {
+  list-style: none;
+  display: flex;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  border-left: 1px solid white;
+  padding: 0 15px;
+}
+
+footer .list-first {
+  border-left: none;
+}
