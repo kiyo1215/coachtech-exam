@@ -30,7 +30,8 @@ header {
   display: flex;
   justify-content: space-between;
   padding: 20px 0;
-  position: fixed;
+  position: sticky;
+  top: 0;
   background-color: white;
   width: 100%;
   z-index: 1;
@@ -158,6 +159,23 @@ header a:hover {
   line-height: 25px;
 }
 
+@media screen and (max-width: 768px) {
+  .info-item {
+    display: block;
+    width: 100%;
+    padding-bottom: 20px;
+  }
+
+  .info-item img {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .info-item-text {
+    width: 100%;
+  }
+}
+
 .inquiry {
   text-align: center;
   padding: 85px 0;
@@ -211,4 +229,36 @@ footer a {
 
 footer .list-first {
   border-left: none;
+}
+
+@media screen and (max-width: 768px) {
+  footer {
+    padding: 0;
+  }
+
+  footer p {
+    width: 50%;
+    text-align: center;
+    line-height: 245px;
+  }
+
+  footer ul {
+    display: block;
+    width: 50%;
+    padding: 10px 0 20px;
+  }
+
+  footer li {
+    margin-top: 20px;
+
+  }
+
+  footer a {
+    border: none;
+    /* background-color: pink; */
+    text-align: center;
+    padding: 0;
+
+  }
+
 }

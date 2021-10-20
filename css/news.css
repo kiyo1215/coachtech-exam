@@ -30,7 +30,8 @@ header {
   display: flex;
   justify-content: space-between;
   padding: 20px 0;
-  position: fixed;
+  position: sticky;
+  top: 0;
   background-color: white;
   width: 100%;
   z-index: 1;
@@ -131,12 +132,19 @@ header a:hover {
 .info-item {
   display: block;
   width: 75%;
-  margin: 0 auto;
+  margin: 0 auto 10px;
   padding: 20px;
   border: 1px solid black;
   color: black;
+  line-height: 25px;
   text-decoration: none;
-  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .info-item {
+    font-size: 14px;
+    padding: 10px;
+  }
 }
 
 .info-item span {
@@ -202,4 +210,36 @@ footer a {
 
 footer .list-first {
   border-left: none;
+}
+
+@media screen and (max-width: 768px) {
+  footer {
+    padding: 0;
+  }
+
+  footer p {
+    width: 50%;
+    text-align: center;
+    line-height: 245px;
+  }
+
+  footer ul {
+    display: block;
+    width: 50%;
+    padding: 10px 0 20px;
+  }
+
+  footer li {
+    margin-top: 20px;
+
+  }
+
+  footer a {
+    border: none;
+    /* background-color: pink; */
+    text-align: center;
+    padding: 0;
+
+  }
+
 }

@@ -29,18 +29,17 @@
 header {
   display: flex;
   justify-content: space-between;
-  /* padding: 20px 0; */
-  position: fixed;
+  position: sticky;
+  top: 0;
+  padding: 20px 0;
   background-color: white;
   width: 100%;
   z-index: 1;
-  height: 64px;
 }
 
 header h1 {
   font-size: 24px;
   padding-left: 20px;
-  line-height: 64px;
 }
 
 header ul {
@@ -133,6 +132,12 @@ header a:hover {
   margin: 0 auto;
 }
 
+@media screen and (max-width: 768px) {
+  .main-inner {
+    width: 90%;
+  }
+}
+
 .main-inner-item {
   display: flex;
   border-top: 1px solid black;
@@ -205,4 +210,36 @@ footer a {
 
 footer .list-first {
   border-left: none;
+}
+
+@media screen and (max-width: 768px) {
+  footer {
+    padding: 0;
+  }
+
+  footer p {
+    width: 50%;
+    text-align: center;
+    line-height: 245px;
+  }
+
+  footer ul {
+    display: block;
+    width: 50%;
+    padding: 10px 0 20px;
+  }
+
+  footer li {
+    margin-top: 20px;
+
+  }
+
+  footer a {
+    border: none;
+    /* background-color: pink; */
+    text-align: center;
+    padding: 0;
+
+  }
+
 }

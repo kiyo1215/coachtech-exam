@@ -30,7 +30,8 @@ header {
   display: flex;
   justify-content: space-between;
   padding: 20px 0;
-  position: fixed;
+  position: sticky;
+  top: 0;
   background-color: white;
   width: 100%;
   z-index: 1;
@@ -38,6 +39,7 @@ header {
 
 header h1 {
   font-size: 24px;
+  margin-left: 20px;
 }
 
 header ul {
@@ -158,6 +160,20 @@ header a:hover {
   margin-top: 15px;
 }
 
+@media screen and (max-width: 768px) {
+  .main-item {
+    width: 100%;
+    margin-bottom: 25px;
+  }
+
+  .main-item:nth-child(1),
+  .main-item:nth-child(4),
+  .main-item:nth-child(6) {
+    margin-top: 0;
+    margin-bottom: 25px;
+  }
+}
+
 .main-item p {
   font-size: 14px;
   line-height: 25px;
@@ -222,4 +238,36 @@ footer a {
 
 footer .list-first {
   border-left: none;
+}
+
+@media screen and (max-width: 768px) {
+  footer {
+    padding: 0;
+  }
+
+  footer p {
+    width: 50%;
+    text-align: center;
+    line-height: 245px;
+  }
+
+  footer ul {
+    display: block;
+    width: 50%;
+    padding: 10px 0 20px;
+  }
+
+  footer li {
+    margin-top: 20px;
+
+  }
+
+  footer a {
+    border: none;
+    /* background-color: pink; */
+    text-align: center;
+    padding: 0;
+
+  }
+
 }
